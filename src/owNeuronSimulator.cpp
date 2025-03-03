@@ -96,7 +96,7 @@ owNeuronSimulator::owNeuronSimulator(int muscleNumber, float timeStep,
                                                       // you'r .hoc file)
                                                       // file with NEURON model
   // from which you want read info about signal (Voltage)
-  // Now it's hadrcoded for only one section SMDDR_mus it's a muscle section
+  // Now it's hardcoded for only one section SMDDR_mus it's a muscle section
   // from model file in sibernetic_NEURON you can find it in folder
   // (path/to/sibewnretic_NEURON/model/c.elegans/ria_.hoc)
   PyObject *dt = PyFloat_FromDouble(timeStep); // Create time step argument
