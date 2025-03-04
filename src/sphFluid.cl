@@ -90,7 +90,7 @@
 #define FOUND_ONE_NEIGHBOR 1
 #define radius_segments 30
 
-// Prepereing fot Neighbour Search algorithm function and kernels block
+// Preparing for Neighbour Search algorithm function and kernels block
 
 // FUNCTION DEPRECATED
 /** Clearing neighborMap data buffer before next calculation cycle.
@@ -136,7 +136,7 @@ int cellId(
 		+ cellFactors_.z * gridCellsX * gridCellsY;
 	return cellId_;
 }
-/** Caculation spatial hash cellId for every particle
+/** Calculating spatial hash cellId for every particle
  *  Kernel fill up particleIndex buffer.
  */
  int4 cellFactors(
@@ -749,7 +749,7 @@ __kernel void pcisph_computeElasticForces(
 // Boundary handling, according to the following article:
 // M. Ihmsen, N. Akinci, M. Gissler, M. Teschner, Boundary Handling and Adaptive Time-stepping for PCISPH Proc. VRIPHYS, Copenhagen, Denmark, pp. 79-88, Nov 11-12, 2010.
 // short citation: Ihmsen et. al., 2010
-// The article chapter 3.2 describes new boundary method that combines the idea of direct-forcing [BTT09]
+// The article chapter 3.2 describes a new boundary method that combines the idea of direct-forcing [BTT09]
 // with the pressure-based frozen-particles method. The proposed boundary method enforces non-penetration
 // of rigid objects even for large time steps. By incorporating density estimates at the boundary into the
 // pressure force, unnatural accelerations resulting from high pressure ratios are avoided.
